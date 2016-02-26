@@ -1,4 +1,4 @@
-module.exports = (function() {
+LayerTree = (function() {
   function exports() {}
 
   exports.buildLayers = function(file) {
