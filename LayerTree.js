@@ -1,7 +1,9 @@
-LayerTree = (function() {
-  function exports() {}
+var LayerTree;
 
-  exports.buildLayers = function(file) {
+LayerTree = (function() {
+  function LayerTree() {}
+
+  LayerTree.buildLayers = function(file) {
     var layer, name, results;
     results = [];
     for (name in file) {
@@ -11,7 +13,7 @@ LayerTree = (function() {
     return results;
   };
 
-  exports.createChildNodes = function(layer) {
+  LayerTree.createChildNodes = function(layer) {
     var child, index, ref, results;
     ref = layer.children;
     results = [];
@@ -22,6 +24,6 @@ LayerTree = (function() {
     return results;
   };
 
-  return exports;
+  return LayerTree;
 
 })();
