@@ -12,8 +12,8 @@ sketch = Framer.Importer.load("imported/import@1x")
 
 Then require LayerTree, assign it to a variable, and call the `buildLayers` method passing in the imported file.
 ```
-root = require "Layers"
-root.buildLayers(sketch)
+LayerTree = require "LayerTree"
+LayerTree.buildLayers(sketch)
 ```
 
 
